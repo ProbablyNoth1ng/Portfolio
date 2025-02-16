@@ -1,0 +1,47 @@
+.name{
+    padding: 5px 10px;
+    background-color: #FF0653;
+    border-radius: 5px;
+    transform: translate(10px, 5px) rotate(3deg);
+}
+
+.header_subtitle{
+    max-width: 500px;   
+}
+
+.pfp {
+    max-width: 500px;
+}
+
+.wrap{
+    background-color: #242424;
+   
+}
+.cv_part{
+    width: 500px;
+    padding: 70px 20px;
+    border: 3px solid #FF0653;
+    border-radius: 20px;
+    transform: translate(0,-230px);
+    .subtitle{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+.text_part{
+    
+}
+
+.cv_btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #FF0653;
+    cursor: pointer;
+}
+
+.right_part{
+    .subtitle{
+        max-width: 500px;
+    }
+    
+}
