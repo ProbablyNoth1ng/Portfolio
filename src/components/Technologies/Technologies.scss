@@ -1,0 +1,7 @@
+@use 'sass:color';
+
+.technology_block{
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color:  color.scale(#FF0653, $lightness: -40%);
+}
