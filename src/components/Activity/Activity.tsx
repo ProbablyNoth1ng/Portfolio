@@ -1,6 +1,6 @@
 import './Activity.scss'
 import { useEffect, useState } from "react";
-import {ActivityCalendar, ThemeInput} from "react-activity-calendar";
+import {ActivityCalendar} from "react-activity-calendar";
 
 
 const GITHUB_API = "https://api.github.com/graphql";

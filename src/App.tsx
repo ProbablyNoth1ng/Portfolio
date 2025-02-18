@@ -14,8 +14,8 @@ function App() {
       <Nav />
       <About/>
       <Technologies/>
-      {/* <Activity/> */}
       <Showcase/>
+      <Activity/>
       <Footer/>
       
     </>

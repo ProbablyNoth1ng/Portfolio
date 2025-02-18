@@ -10,14 +10,12 @@ const Nav = () => {
                     ProbablyNoth1ng
                 </div>
                 <ul className="links flex">
-                    <li className="link px-3 text-2xl text-white">Home</li>
-                    <li className="link px-3 text-2xl text-white">Projects</li>
-                    <li className="link px-3 text-2xl text-white">Contacts</li>
+                     <li className="link px-3 text-2xl text-white font-medium uppercase "><a href="#about" className='after:block after:w-0 after:h-[2px] after:bg-[#FF0653] after:transition-all after:duration-300 hover:after:w-full'> About</a></li>
+                    <li className="link px-3 text-2xl text-white font-medium uppercase "><a href="#projects" className='after:block after:w-0 after:h-[2px] after:bg-[#FF0653] after:transition-all after:duration-300 hover:after:w-full'> Projects</a></li>
+                    <li className="link px-3 text-2xl text-white font-medium uppercase "><a href="#footer" className='after:block after:w-0 after:h-[2px] after:bg-[#FF0653] after:transition-all after:duration-300 hover:after:w-full'> Contact</a></li>
                 </ul>
                 <div className="socials">
-                    <i className="fa-brands fa-linkedin px-2 text-2xl text-white"></i>
-                    <i className="fa-brands fa-github px-2 text-2xl text-white"></i>
-                    <i className="fa-solid fa-envelope px-2 text-2xl text-white"></i>
+                   <a href="" className="resume"><button className='nav_button text-white uppercase font-bold '>Resume</button></a>
                 </div>
             </div>
             
