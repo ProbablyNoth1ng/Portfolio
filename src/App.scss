@@ -4,8 +4,13 @@
 }
 body{
     background-color: #161616;
+    width: 100vw; 
+    overflow-x: hidden;
 }
 .subtitle{
     color: #B6B6B6;
 }
 
+.lock{
+    overflow-y: hidden;
+}

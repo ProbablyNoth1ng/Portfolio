@@ -9,6 +9,8 @@ const TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
 
 const Activity = () => {
     const [contributions, setContributions] = useState([])
+    const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+    const [blockSize, setBlockSize] = useState<number>()
 
     useEffect(() => {
         const fetchContribution = async() => {
@@ -62,11 +64,27 @@ const Activity = () => {
         fetchContribution();
     },[])
 
+    useEffect(() => {
+       let width = window.innerWidth
+       setScreenWidth(width)
+    
+       if (width > 1700) {
+            setBlockSize(20);
+        } else if (width > 1500) {
+            setBlockSize(15);
+        } else if (width > 1000) {
+            setBlockSize(10);
+        } else if (width > 700){
+            setBlockSize(8);
+        }else if (width > 500){
+            setBlockSize(5);
+        }
+    },[])
 
-   
+  
     return (
     <>
-        <div className="activity container mx-auto py-20">
+        <div className="activity container mx-auto py-20" >
         
         <h2 className="text-3xl font-bold mb-10 text-white text-center ">My Github Activity</h2>
         <div className="p-5 flex justify-center border rounded-lg shadow-lg text-white">
@@ -74,13 +92,15 @@ const Activity = () => {
              
         
             {contributions.length > 0 ? (
+                
                 <ActivityCalendar
+                    
                     data={contributions}
                     theme={{
                         light: ['#f0f0f0', '#c4edde', '#7ac7c4', '#f73859', '#384259'],
                         dark: ['#161B22', '#0E4429', '#006D32', '#26A641', '#39D353'],
                       }}
-                    blockSize={20}
+                    blockSize={blockSize}
                 />
             ) : (
                 <ActivityCalendar data={contributions} loading />
