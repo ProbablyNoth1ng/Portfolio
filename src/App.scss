@@ -2,10 +2,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body{
-    background-color: #161616;
-    width: 100vw; 
+html, body {
     overflow-x: hidden;
+    background-color: #161616;
+    width: 100%;
+    position: relative;
 }
 .subtitle{
     color: #B6B6B6;
@@ -13,4 +14,7 @@ body{
 
 .lock{
     overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }

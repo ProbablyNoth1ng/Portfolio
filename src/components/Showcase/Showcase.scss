@@ -1,3 +1,4 @@
+@use '../../mixins' as *;
 
 .showcase{
      background-color: #242424;
@@ -9,28 +10,40 @@
     max-width: 480px ;
     border:  1px solid white;
     border-radius: 20px;
-    background-color: #3d3d3d;
+    background-color: oklch(0.21 0.034 264.665);
 }
 .showcase_text{
     padding: 20px;
 
 }
-
+// .showcase_text > *{
+//     height: 25%;
+// }
 .stack_crumb{
     background-color: gray;
+    border: 1px solid #b80940;
     padding: 5px 10px;
     border-radius: 15px;
+    transition: all 0.1s ease-in-out 0s;
+    &:hover{
+        border: 1px solid #FF0653;
+        transform: scale(1.1);
+        
+    }
 }
 
 .showcase_img{
-    min-height: 250px;
+    height: 250px;
     transform: scaleY(1);
     transform-origin: top; 
     transition: transform 0.25s ease-in-out 0s;
     border-top-left-radius: 20px; 
     border-top-right-radius: 20px;
+    @include media('max','sm'){
+        min-height: auto;
+    }
     &:hover{
-        transform: scaleY(1.03  ); /* Increases height by 1.5x */
+        transform: scaleY(1.03  ); 
         
     }
 }

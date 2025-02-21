@@ -1,7 +1,7 @@
 import './Activity.scss'
 import { useEffect, useState } from "react";
 import {ActivityCalendar} from "react-activity-calendar";
-
+import { motion  } from "framer-motion"
 
 const GITHUB_API = "https://api.github.com/graphql";
 const TOKEN = import.meta.env.VITE_GITHUB_TOKEN; 
@@ -12,6 +12,7 @@ const Activity = () => {
     const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
     const [blockSize, setBlockSize] = useState<number>()
 
+    console.log(screenWidth)
     useEffect(() => {
         const fetchContribution = async() => {
             const query = {
@@ -87,12 +88,17 @@ const Activity = () => {
         <div className="activity container mx-auto py-20" >
         
         <h2 className="text-3xl font-bold mb-10 text-white text-center ">My Github Activity</h2>
-        <div className="p-5 flex justify-center border rounded-lg shadow-lg text-white">
-
-             
+        <motion.div
+                className='p-5 flex justify-center border rounded-lg shadow-lg text-white'
+                initial={{ opacity: 0 ,scale: 0.3 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                whileInView={{ opacity: 1, scale:1  }}
+                viewport={{ once: true, amount: 0 }}
+        >
         
             {contributions.length > 0 ? (
                 
+
                 <ActivityCalendar
                     
                     data={contributions}
@@ -102,13 +108,14 @@ const Activity = () => {
                       }}
                     blockSize={blockSize}
                 />
+
+
             ) : (
                 <ActivityCalendar data={contributions} loading />
             )}
 
-
+            </motion.div>
         
-            </div>
         </div>
     </>
     )

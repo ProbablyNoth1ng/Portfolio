@@ -29,7 +29,7 @@ const Nav = () => {
         {windowWidth > 768 ? 
                 <nav className='nav '>
                 <div className="container flex justify-between py-8 mx-auto items-center ">
-                    <div className="logo text-3xl text-white font-bold">
+                    <div className="logo text-3xl  text-white font-bold">
                         ProbablyNoth1ng
                     </div>
                     <ul className="links flex">
@@ -51,7 +51,7 @@ const Nav = () => {
             <div className={` bg `}>
             <nav className='nav  flex justify-between py-6 mx-auto items-center' >
                 <div className=" nav__inner">
-                    <div className="logo text-3xl text-white font-bold">
+                    <div className="logo text-3xl max-md:text-2xl max-sm:text-lg text-white font-bold">
                         ProbablyNoth1ng
                     </div>
              

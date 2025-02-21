@@ -1,4 +1,5 @@
-@import '../../mixins.scss';
+@use '../../mixins' as *;
+
 .nav_button{
     cursor: pointer;
     padding: 10px 20px;
@@ -15,7 +16,8 @@
 
 
 @include media('max','md'){
-    
+
+
  
 
     .menu-button {
@@ -165,7 +167,7 @@
     
   .links__body.opened{
     
-      background-color: olive;
+      background-color: black;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -191,3 +193,8 @@
   }
 
 }
+
+
+
+
+
