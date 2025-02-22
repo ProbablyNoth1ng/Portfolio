@@ -1,12 +1,12 @@
 import './Showcase.scss'
 import { motion  } from "framer-motion"
 
-const extensionImage = 'src/assets/extension.png'
-const quizImage = 'src/assets/quiz.png'
-const todoImage = 'src/assets/todo.png'
-const discordCheckerImage = 'src/assets/discordChecker.png'
-const bjornImage = 'src/assets/bjorn.png'
-const burndImage = 'src/assets/burnd.png'
+import extensionImage from  '../../assets/extension.png'
+import quizImage from  '../../assets/quiz.png'
+import todoImage from  '../../assets/todo.png'
+import discordCheckerImage from  '../../assets/discordChecker.png'
+import bjornImage from  '../../assets/bjorn.png'
+import burndImage from  '../../assets/burnd.png'
 
 
 const Showcase = () => {

@@ -1,5 +1,5 @@
 import './About.scss'
-let img = 'src/assets/ava.jpg'
+import img from '../../assets/ava.jpg'
 
 import { motion  } from "framer-motion"
 const About = () => {
@@ -7,6 +7,7 @@ const About = () => {
 
     return (
         <>
+        
             <header className='header ' id='about'>
         
                 <div className="container mx-auto w-full flex justify-evenly max-lg:flex-col py-15">
