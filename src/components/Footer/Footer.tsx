@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className='flex justify-center'><a href="mailto:android.kaplan@gmail.com" className=''><button className='cursor-pointer footer_btn text-white uppercase text-2xl font-bold' >Send an email </button></a></div>
                     <div className="flex justify-center pt-10 items-center"> 
                         <div className='mx-5'><a href="https://www.linkedin.com/in/andriikaplan"><i className="fa-brands fa-linkedin  text-5xl text-white"></i></a></div>
-                        <div className='mx-5'><img src={img} alt="" className='cat'/></div>
+                        <div className='mx-5'><img src={img} alt="" className='catgif'/></div>
                         <div className='mx-5'><a href="https://github.com/ProbablyNoth1ng"><i className="fa-brands fa-github  text-5xl text-white"></i></a></div>
                     </div>
                 </div>

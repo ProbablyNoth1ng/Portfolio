@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import './Nav.scss'
 
+import resume from '../../assets/resume.pdf'
+
 const Nav = () => {
     const [clicked, setClicked] = useState<Boolean>(false);
     const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
@@ -14,9 +16,9 @@ const Nav = () => {
         }
     }
 
-
+   
     useEffect(() => {
-
+        
         const handleResize = () => {
             setWindowWidth(window.innerWidth)
         }
@@ -28,17 +30,18 @@ const Nav = () => {
         
         {windowWidth > 768 ? 
                 <nav className='nav '>
-                <div className="container flex justify-between py-8 mx-auto items-center ">
+                <div className="container flex justify-between py-8  mx-auto items-center ">
                     <div className="logo text-3xl  text-white font-bold">
                         ProbablyNoth1ng
                     </div>
                     <ul className="links flex">
-                        <li className="link px-3 text-2xl text-white font-medium uppercase "><a href="#about" className='after:block after:w-0 after:h-[2px] after:bg-[#FF0653] after:transition-all after:duration-300 hover:after:w-full'> About</a></li>
-                        <li className="link px-3 text-2xl text-white font-medium uppercase "><a href="#projects" className='after:block after:w-0 after:h-[2px] after:bg-[#FF0653] after:transition-all after:duration-300 hover:after:w-full'> Projects</a></li>
-                        <li className="link px-3 text-2xl text-white font-medium uppercase "><a href="#footer" className='after:block after:w-0 after:h-[2px] after:bg-[#FF0653] after:transition-all after:duration-300 hover:after:w-full'> Contact</a></li>
+                        
+                        <li className="link px-3 text-2xl text-white font-medium uppercase " ><a href="#about" className='after:block after:w-0 after:h-[2px] after:bg-[#FF0653] after:transition-all after:duration-300 hover:after:w-full'> About</a></li>
+                        <li className="link px-3 text-2xl text-white font-medium uppercase " ><a href="#projects" className='after:block after:w-0 after:h-[2px] after:bg-[#FF0653] after:transition-all after:duration-300 hover:after:w-full'> Projects</a></li>
+                        <li className="link px-3 text-2xl text-white font-medium uppercase " ><a href="#footer" className='after:block after:w-0 after:h-[2px] after:bg-[#FF0653] after:transition-all after:duration-300 hover:after:w-full'> Contact</a></li>
                     </ul>
                     <div className="socials">
-                    <a href="#cv" download="Andrii_Kaplan_CV" className='resume'>
+                    <a href={resume} download="Andrii_Kaplan_CV" className='resume'>
                         <button  className=' text-xl nav_button text-white uppercase font-bold'>
                         Resume
                         </button> 
@@ -48,8 +51,7 @@ const Nav = () => {
                 
             </nav>
          : (
-            <div className={` bg `}>
-            <nav className='nav  flex justify-between py-6 mx-auto items-center' >
+            <nav className='nav  flex justify-between py-6 max-sm:py-4 mx-auto items-center' >
                 <div className=" nav__inner">
                     <div className="logo text-3xl max-md:text-2xl max-sm:text-lg text-white font-bold">
                         ProbablyNoth1ng
@@ -71,7 +73,6 @@ const Nav = () => {
                 </div>
                
            </nav> 
-        </div>
          )
            
         }
@@ -88,15 +89,3 @@ export default Nav
 
 
 
-// {
-//     window.innerWidth > 768  ? {
-//         <>
-                
-//         </>
-//     }  : {
-//         <> 
-       
- 
-//         </>
-//     }
-// }

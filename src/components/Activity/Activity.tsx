@@ -2,6 +2,7 @@ import './Activity.scss'
 import { useEffect, useState } from "react";
 import {ActivityCalendar} from "react-activity-calendar";
 import { motion  } from "framer-motion"
+import cat from '../../assets/cat900.png'
 
 const GITHUB_API = "https://api.github.com/graphql";
 const TOKEN = import.meta.env.VITE_GITHUB_TOKEN; 
@@ -88,6 +89,10 @@ const Activity = () => {
         <div className="activity container mx-auto py-20" >
         
         <h2 className="text-3xl font-bold mb-10 text-white text-center ">My Github Activity</h2>
+        <div className='relative flex justify-end'>
+            <img src={cat} alt="" className='cat_on_activity'/>
+        </div>
+
         <motion.div
                 className='p-5 flex justify-center border rounded-lg shadow-lg text-white'
                 initial={{ opacity: 0 ,scale: 0.3 }}

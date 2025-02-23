@@ -11,9 +11,18 @@
 }
 .nav {
     background-color: #242424;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
 }
 
-
+#root {
+    max-width: 100%;
+    overflow-x: clip;
+}
 
 @include media('max','md'){
 
@@ -193,8 +202,3 @@
   }
 
 }
-
-
-
-
-
