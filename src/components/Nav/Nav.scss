@@ -3,13 +3,14 @@
 .nav_button{
     cursor: pointer;
     padding: 10px 20px;
-    border: 1px solid gray ;
+    border: 1px solid gray ;    
     border-radius: 10px;
     &:hover{
         background-color: gray;
     }
 }
 .nav {
+    border-bottom: 1px solid #FF0653;
     background-color: #242424;
     position: sticky;
     top: 0;
@@ -24,7 +25,7 @@
     overflow-x: clip;
 }
 
-@include media('max','md'){
+@include media('max','lg'){
 
 
  
@@ -190,7 +191,7 @@
           position: absolute;
           display: flex !important;
 
-       
+        
 
       }
       .link{

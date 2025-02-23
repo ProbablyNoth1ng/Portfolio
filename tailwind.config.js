@@ -11,10 +11,10 @@ module.exports = ({
     extend: {
       screens: {
         
-        // 'max-2xl': { max: '1536px' },
-        // 'max-xl': { max: '1280px' },
-        // 'max-lg': { max: '991px' },
-        // 'max-md': { max: '768px' },
+        'max-2xl': { max: '1536px' },
+        'max-xl': { max: '1280px' },
+        'max-lg': { max: '991px' },
+        'max-md': { max: '768px' },
         'max-sm': { max: '576px' },
         'max-xs': { max: '375px' },
       },
