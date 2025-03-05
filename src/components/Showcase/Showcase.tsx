@@ -6,6 +6,7 @@ import quizImage from  '../../assets/quiz.png'
 import todoImage from  '../../assets/todo.png'
 import discordCheckerImage from  '../../assets/discordChecker.png'
 import bjornImage from  '../../assets/bjorn.png'
+import solarImage from  '../../assets/solar.png'
 import burndImage from  '../../assets/burnd.png'
 
 
@@ -89,9 +90,35 @@ const Showcase = () => {
                         </div>
                     </motion.div>
                     
+
                     <motion.div
                             className='   showcase_block m-3 q  '
                             initial={{ opacity: 0, x:300 ,scale: 1 }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                            whileInView={{ opacity: 1, x: 0, scale:1  }}
+                            viewport={{ once: true, amount: 0 }}
+                    >
+                        <img src={solarImage} alt="" className='showcase_img w-full max-w-full h-auto rounded-lg shadow-md'/>
+                        <div className="showcase_text">
+                            <h3 className="title text-white text-3xl pb-1 font-bold">Solar system</h3>
+                            <p className="subtitle text-xl pb-5">A 3D interactive recreation of our solar system built with Three.js, React, and TypeScript. Explore celestial bodies with realistic motion and visuals. </p>
+                            <div className="stack flex flex-wrap pb-5">
+                                <div className="stack_crumb text-white mr-2 mb-2">React</div>
+                                <div className="stack_crumb text-white mr-2 mb-2">TypeScript</div>
+                                <div className="stack_crumb text-white mr-2 mb-2">Three.js</div>
+                                <div className="stack_crumb text-white mr-2 mb-2">HTML</div>
+                                <div className="stack_crumb text-white mr-2 mb-2">SASS</div>
+                                <div className="stack_crumb text-white mr-2 mb-2">VITE</div>
+                            </div>
+                            <span className='text-white '><a href="https://github.com/ProbablyNoth1ng/Solar-system" className=''><i className="fa-brands fa-github px-2 text-2xl text-white"></i> <span className='no-underline hover:underline hover:decoration-[#FF0653] transition duration-300'> View on Github</span></a> </span>
+                        </div>
+                        
+                    </motion.div>
+
+
+                    <motion.div
+                            className='   showcase_block m-3 q  '
+                            initial={{ opacity: 0, x:-300 ,scale: 1 }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
                             whileInView={{ opacity: 1, x: 0, scale:1  }}
                             viewport={{ once: true, amount: 0 }}
@@ -114,7 +141,7 @@ const Showcase = () => {
 
                     <motion.div
                             className='   showcase_block m-3  '
-                            initial={{ opacity: 0, x:-300 ,scale: 1 }}
+                            initial={{ opacity: 0, x:300 ,scale: 1 }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
                             whileInView={{ opacity: 1, x: 0, scale:1  }}
                             viewport={{ once: true, amount: 0 }}
@@ -135,9 +162,10 @@ const Showcase = () => {
                         </div>
                     </motion.div>
 
+
                     <motion.div
                             className='   showcase_block m-3  '
-                            initial={{ opacity: 0, x:300 ,scale: 1 }}
+                            initial={{ opacity: 0, x:-300 ,scale: 1 }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
                             whileInView={{ opacity: 1, x: 0, scale:1  }}
                             viewport={{ once: true, amount: 0 }}

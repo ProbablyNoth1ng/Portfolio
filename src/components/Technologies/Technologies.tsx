@@ -24,6 +24,7 @@ const Technologies = () => {
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Webpack</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Tailwind</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Bootstrap</div>
+                    <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Three.js</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">MongoDB</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Redux</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Firebase</div>
