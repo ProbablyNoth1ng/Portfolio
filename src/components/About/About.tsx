@@ -1,6 +1,6 @@
 import './About.scss'
 import img from '../../assets/ava.jpg'
-import resume from '../../assets/resume_en.pdf'
+import resume from '../../assets/resume.pdf'
 
 import { motion  } from "framer-motion"
 

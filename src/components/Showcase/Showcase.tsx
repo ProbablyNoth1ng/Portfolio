@@ -182,7 +182,7 @@ const Showcase = () => {
                                 <div className="stack_crumb text-white mr-2 mb-2">VITE</div>
                             </div>
                             <span className='text-white '><a href="https://burnd.vercel.app/" className=''><i className="fa-brands fa-github px-2 text-2xl text-white"></i> <span className='no-underline hover:underline hover:decoration-[#FF0653] transition duration-300'> View on Github</span></a> </span>
-                        </div>
+                        </div>  
                     </motion.div>
 
                 </div>
