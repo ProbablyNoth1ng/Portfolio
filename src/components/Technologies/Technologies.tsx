@@ -16,6 +16,7 @@ const Technologies = () => {
                     >
            
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">React</div>
+                    <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Nest.js</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">TypeScript</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">JavaScript</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">HTML</div>
@@ -26,6 +27,7 @@ const Technologies = () => {
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Bootstrap</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Three.js</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">MongoDB</div>
+                    <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Prisma</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Redux</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Firebase</div>
                     <div className="technology_block text-3xl uppercase font-bold text-white mx-3 mb-3 ">Postman</div>
